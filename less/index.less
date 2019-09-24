@@ -48,12 +48,58 @@ table {
 	border-spacing: 0;
 }
 
-/* Set every element's box-sizing to border-box */
+//beginning of my code//
+
+@backgroundColor: gray;
+
 * {
     box-sizing: border-box;
 }
 
 html, body {
-    height: 100%;
+		height: 100%;
+}
+
+.top-image {
+	width: 50%;
+	margin: 50px;
+}
+
+.name {
+	margin: 60px;
+	font-size: 3rem;
+	text-align: center;
+	font-family: 'Monoton', cursive;
+}	
+
+.top-info {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	border: 3px solid black;
+	width: 90%;
+	margin: 5%;
+}
+
+.container .nav-bar {
+  z-index: 1;
+	display: flex;
+	flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+	padding: 10px;
+	font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 15px;
+	background-color: dodgerblue;
+	position: fixed;
+	top: 0;
+	width: 100%;
+
+		a:hover {
+			color: black;
+			border: 1px solid black;
+			transition: all 0.5s ease;
+			padding: 6px;
+	}
 }
 
