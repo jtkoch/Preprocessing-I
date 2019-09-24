@@ -30,7 +30,7 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 body {
-	line-height: 1;
+	line-height: 1.2;
 }
 ol, ul {
 	list-style: none;
@@ -50,56 +50,106 @@ table {
 
 //beginning of my code//
 
-@backgroundColor: gray;
+@backgroundColor: white;
+@funFont: 'Monoton', cursive;
+@mainFont: Trebuchet, Helvetica;
+@textColor: black;
+@navColor: dodgerblue;
 
-* {
-    box-sizing: border-box;
-}
-
-html, body {
-		height: 100%;
-}
-
-.top-image {
+.top {
 	width: 50%;
 	margin: 50px;
 }
 
-.name {
-	margin: 60px;
-	font-size: 3rem;
-	text-align: center;
-	font-family: 'Monoton', cursive;
-}	
-
-.top-info {
+.display {
 	display: flex;
 	flex-direction: row;
 	align-items: center;
+}
+
+.size {
 	border: 3px solid black;
 	width: 90%;
 	margin: 5%;
 }
 
-.container .nav-bar {
-  z-index: 1;
-	display: flex;
-	flex-direction: row;
-  justify-content: space-evenly;
-  align-items: center;
-	padding: 10px;
-	font-family: 'Open Sans Condensed', sans-serif;
-  font-size: 15px;
-	background-color: dodgerblue;
-	position: fixed;
-	top: 0;
-	width: 100%;
-
-		a:hover {
-			color: black;
-			border: 1px solid black;
-			transition: all 0.5s ease;
-			padding: 6px;
-	}
+* {
+    box-sizing: border-box;
 }
 
+.container {
+
+	@media (max-width: 500px){
+		width: 100%;
+	}
+
+	html, body {
+		height: 100%;
+		color: @backgroundColor;
+	}
+
+	.name {
+				margin: 60px;
+				font-size: 3rem;
+				text-align: center;
+				font-family: @funFont;
+				color: @textColor;
+			}		
+	
+		.top-info {
+			.display();
+			.size();
+
+			.top-image {
+				.top();
+			}
+				.about {
+					font-size: 30px;
+					font-family: @mainFont;
+					.top();
+			}
+		}
+			
+					.nav-bar {
+						z-index: 1;
+						display: flex;
+						flex-direction: row;
+						justify-content: space-evenly;
+						align-items: center;
+						padding: 10px;
+						font-family: @funFont;
+						font-size: 15px;
+						background-color: @navColor;
+						position: fixed;
+						top: 0;
+						width: 100%;
+
+							a:hover {
+								color: @textColor;
+								border: 1px solid black;
+								transition: all 0.5s ease;
+								padding: 6px;		
+		}					
+	}
+		.bottom-section {
+			.size();
+			font-family: @mainFont;
+			font-size: 20px;
+			text-align: center;
+
+			table, th, td {
+				border: 3px solid lightgray;
+				padding: 10px;
+			}	
+
+				h1 {
+					font-size: 30px;
+					text-align: center;
+					margin: 10px;
+					text-decoration: underline;
+		}
+	}
+					footer {
+						margin: 5%;
+					}
+}
