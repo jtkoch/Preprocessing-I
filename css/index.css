@@ -136,7 +136,7 @@ table {
   align-items: center;
 }
 .size {
-  border: 6px solid black;
+  border: 2px solid black;
   width: 90%;
   margin: 5%;
 }
@@ -163,7 +163,6 @@ table {
 .container .top-info {
   position: relative;
   text-align: center;
-  border: 6px solid black;
   width: 90%;
   margin: 5%;
 }
@@ -200,7 +199,7 @@ table {
   padding: 6px;
 }
 .container .bottom-section {
-  border: 6px solid black;
+  border: 2px solid black;
   width: 90%;
   margin: 5%;
   font-family: Trebuchet, Helvetica;
