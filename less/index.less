@@ -57,18 +57,18 @@ table {
 @navColor: dodgerblue;
 
 .top {
-	width: 50%;
-	margin: 50px;
+	width: 100%;
 }
 
 .display {
 	display: flex;
 	flex-direction: row;
+	justify-content: center;
 	align-items: center;
 }
 
 .size {
-	border: 3px solid black;
+	border: 6px solid black;
 	width: 90%;
 	margin: 5%;
 }
@@ -90,26 +90,31 @@ table {
 
 	.name {
 				margin: 60px;
-				font-size: 3rem;
+				font-size: 3.3rem;
 				text-align: center;
 				font-family: @funFont;
 				color: @textColor;
 			}		
 	
-		.top-info {
-			.display();
-			.size();
+				.top-info {
+					position: relative;
+					text-align: center;	
+					.size();
 
+					.centered {
+						font-family: @mainFont;
+						font-weight: bolder;
+						color: @backgroundColor;
+						position: absolute;
+						top: 50%;
+						left: 50%;
+						transform: translate(-50%, -50%);
+			}	
 			.top-image {
-				.top();
-			}
-				.about {
-					font-size: 30px;
-					font-family: @mainFont;
-					.top();
+				width: 100%;
 			}
 		}
-			
+	
 					.nav-bar {
 						z-index: 1;
 						display: flex;

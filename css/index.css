@@ -127,16 +127,16 @@ table {
   border-spacing: 0;
 }
 .top {
-  width: 50%;
-  margin: 50px;
+  width: 100%;
 }
 .display {
   display: flex;
   flex-direction: row;
+  justify-content: center;
   align-items: center;
 }
 .size {
-  border: 3px solid black;
+  border: 6px solid black;
   width: 90%;
   margin: 5%;
 }
@@ -155,28 +155,29 @@ table {
 }
 .container .name {
   margin: 60px;
-  font-size: 3rem;
+  font-size: 3.3rem;
   text-align: center;
   font-family: 'Monoton', cursive;
   color: black;
 }
 .container .top-info {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  border: 3px solid black;
+  position: relative;
+  text-align: center;
+  border: 6px solid black;
   width: 90%;
   margin: 5%;
 }
-.container .top-info .top-image {
-  width: 50%;
-  margin: 50px;
-}
-.container .top-info .about {
-  font-size: 30px;
+.container .top-info .centered {
   font-family: Trebuchet, Helvetica;
-  width: 50%;
-  margin: 50px;
+  font-weight: bolder;
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.container .top-info .top-image {
+  width: 100%;
 }
 .container .nav-bar {
   z-index: 1;
@@ -199,7 +200,7 @@ table {
   padding: 6px;
 }
 .container .bottom-section {
-  border: 3px solid black;
+  border: 6px solid black;
   width: 90%;
   margin: 5%;
   font-family: Trebuchet, Helvetica;
