@@ -1,1 +1,223 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1.2;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+.top {
+  width: 100%;
+}
+.display {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.size {
+  border: 2px solid black;
+  width: 90%;
+  margin: 5%;
+}
+* {
+  box-sizing: border-box;
+}
+@media (max-width: 500px) {
+  .container {
+    width: 100%;
+  }
+}
+.container html,
+.container body {
+  height: 100%;
+  color: white;
+}
+.container .name {
+  margin: 60px;
+  font-size: 3.3rem;
+  text-align: center;
+  font-family: 'Monoton', cursive;
+  color: black;
+}
+.container .top-info {
+  position: relative;
+  text-align: center;
+  width: 90%;
+  margin: 5%;
+}
+.container .top-info .centered {
+  font-family: Trebuchet, Helvetica;
+  font-weight: bolder;
+  color: black;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.container .top-info .top-image {
+  width: 100%;
+}
+.container .nav-bar {
+  z-index: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 10px;
+  font-family: 'Monoton', cursive;
+  font-size: 15px;
+  background-color: dodgerblue;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.container .nav-bar a:hover {
+  color: black;
+  border: 1px solid black;
+  transition: all 0.5s ease;
+  padding: 6px;
+}
+.container .bottom-section {
+  border: 2px solid black;
+  width: 90%;
+  margin: 5%;
+  font-family: Trebuchet, Helvetica;
+  font-size: 20px;
+  text-align: center;
+}
+.container .bottom-section table,
+.container .bottom-section th,
+.container .bottom-section td {
+  border: 3px solid lightgray;
+  padding: 10px;
+}
+.container .bottom-section h1 {
+  font-size: 30px;
+  text-align: center;
+  margin: 10px;
+  text-decoration: underline;
+}
+.container footer {
+  margin: 5%;
+}
